@@ -9,4 +9,4 @@ source ~/.bashrc
 ## If there is a prompt asking about configuring GRUB, select "/dev/sda".
 apt-get update -y && apt-get dist-upgrade -y && apt-get autoremove -y
 
-apt-get install -y --no-install-recommends vim wget
+apt-get install -y --no-install-recommends tar vim wget
