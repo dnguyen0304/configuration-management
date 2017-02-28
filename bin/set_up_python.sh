@@ -4,6 +4,8 @@
 # ------------
 # Base
 
+set -e
+
 python_version=$1
 
 sudo apt-get update -y
