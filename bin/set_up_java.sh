@@ -15,8 +15,15 @@ apt-get install -y --no-install-recommends openjdk-8-jdk
 # source ~/.bashrc
 
 # # (option-2) Set up an integrated development environment (IDE).
-# # There is also a version without the JDK.
-# wget https://download.jetbrains.com/idea/ideaIC-2016.3.4-no-jdk.tar.gz
-# tar -xf ideaIC-2016.3.4.tar.gz
-# sudo mv ideaIC-2016.3.4 /usr/local/bin/
-# rm ideaIC-2016.3.4.tar.gz
+# # There are versions with and without the JDK.
+# version="2017.2-no-jdk"
+#
+# binary_name="ideaIC-${version}"
+# archive_name="${binary_name}.tar.gz"
+# directory_path="/usr/local/bin/${binary_name}"
+#
+# mkdir ${directory_path}
+#
+# wget https://download.jetbrains.com/idea/${archive_name}
+# tar -xf ${archive_name} --directory ${directory_path} --strip-components 1
+# mv ${archive_name} ${directory_path}
